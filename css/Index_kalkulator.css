@@ -1,0 +1,36 @@
+#btnInsert{
+    background: white;
+    color: black;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+   #btnInsert:hover{
+    background-color: red;
+  }
+  .container{
+    padding-bottom: 30px;
+  }
+  .kalkulacija_poruka{
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 3px;
+  }
+  .crvena_boja{
+    color: red;
+  }
+  /* sklanjanje skrola za input na formi*/
+  #visina::-webkit-outer-spin-button, 
+  #visina::-webkit-inner-spin-button, 
+  #tezina::-webkit-outer-spin-button, 
+  #tezina::-webkit-inner-spin-button{
+    appearance: none;
+    -webkit-appearance: none; 
+    margin: 0;
+  }

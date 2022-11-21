@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+.container_usluge
+{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content:  center;
+    align-items:  center;
+    position: relative;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container_usluge .card
+{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow:  8px 8px 15px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    background-image: linear-gradient(180deg, rgb(189, 70, 1), black); 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: none;
+    backdrop-filter: blur(4px);
+}
+
+.container_usluge .card .content
+{
+    padding:  30px;
+    text-align:  center;
+}
+
+.container_usluge .card .content h2
+{
+    font-weight: bold;
+    font-size:  1.8em;
+    color: white;
+    z-index: 1;
+}
+
+.container .card .content p
+{
+    font-size:  1em;
+    color: white;
+    font-weight: 300;
+}
+
+.container_usluge .card:hover .content a
+{
+    text-align:  center;
+    transform: translateY(0px);
+    transition:  0.5s;
+}
+
+.container_usluge .card .content a
+{
+    width: 150px;
+    height: 40px;
+    padding:  8px 20px;
+    margin-top: 15px;
+    text-align:  center;
+    /* Pomeranje dugmeta po Y osi */
+    transform: translateY(300px); 
+    position: relative;
+    display: inline-block;
+    background: white;
+    color:black;
+    border-radius: 20px;
+    text-decoration:  none;
+    font-weight: 500;
+    box-shadow: inset 0 0 0 0 red;
+
+    /* sklanjanje nakon hovera */
+    transition: ease-out 0.5s;
+    outline: none;
+}
+/* btn hover animacija*/
+.container_usluge .card .content a:hover{
+    box-shadow: inset 150px 0 20px 1px red;
+    color: white;
+}

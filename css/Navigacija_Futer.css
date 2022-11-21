@@ -1,0 +1,118 @@
+/* Navigacija */
+.navbar {
+    text-transform: uppercase;
+  }
+  
+  .navbar a {
+    color: white;
+    transition: 0.2s ease-in;
+  }
+  
+  .navbar a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .navbar-brand:hover{
+    background-color: transparent !important  ;
+  }
+  
+  #social a{
+    transition: 0.4s ease-in;
+  }
+  
+  #social a:hover{
+    border-radius: 25px;
+  }
+  
+  ul.navbar-nav > li > a {
+    letter-spacing: 0.2rem;
+  }
+  
+  .navbar-toggler{
+    background: transparent !important;
+    color: transparent !important;
+  }
+  
+  .fa {
+    padding: 10px;
+    background: black;
+    color: white;
+  }
+  
+  /* Dodavanje stila navigaciji nakon skrola*/
+  .bg-dark{
+        background: transparent !important;
+        color: black !important;
+        transition: 0.3s ease-in;
+        }
+  .bg-dark.skrol{
+        background: white !important;
+  }
+  .bg-dark.skrol a{
+        color: black !important;
+        transition: color 0.4s ease-in;
+  }
+  .bg-dark.skrol a:hover{
+    color: red !important;
+  }
+  .bg-dark.skrol .navbar-brand{
+    filter: invert(100%);
+  }
+
+
+  [class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+body{
+	background: linear-gradient(to bottom, rgb(63, 60, 60),black); 
+	background-repeat:no-repeat; 
+  }	 
+  /* Futer */
+footer{
+	padding: 0.5rem;
+	margin-top: 1rem;
+    background: rgb(48, 45, 45) !important;
+
+}
+footer a{
+	color: gray;
+	transition: color 0.4s ease-in;
+	padding: 0.2rem;
+	letter-spacing: 0.2rem;
+	text-decoration: none;
+}
+footer p{
+	color: white;
+	transition: color 0.4s ease-in;
+	cursor:default;
+}
+
+footer a:hover{
+	color: red;
+	text-decoration: none;
+}
+footer p:hover{
+	color: red;
+	text-decoration: none;
+}
+
+
+@media screen and (max-width:990px){
+    .bg-dark{
+      background: black !important;
+    }
+    .carousel{
+      margin-top: 88px;
+    }
+    #social {
+      margin-left: 42px;
+    }
+  }
+
+@media screen and (max-width:990px){
+	#pozadina img{
+	  margin-top: 88px;
+	}
+   }

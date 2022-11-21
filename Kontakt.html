@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Nemanja Brankovic,nemanjanrt7719@gs.viser.edu.rs">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+   <link rel="stylesheet" type="text/css" href="css/Navigacija_Futer.css">
+   <link rel="stylesheet" type="text/css" href="css/Kon_dugme.css">
+
+   <link rel="icon" type="image/x-icon" href="Slike/logo_85.png">
+   <title>Kontakt</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg  sticky-top bg-dark" id="nav_main" style="margin-top: -22px;" >
+      <a class="navbar-brand" href="index.html"><img src="Slike/logo_85.png"  class="img-fluid mx-auto d-block"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true" ></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ml-5 text-uppercase" style="padding-left: 0px;">
+          <li class="nav-item ">
+            <a class="nav-link active" href="index.html">Početna </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="o_nama.html">O nama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="usluge.html">Usluge</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cenovnik.html">Cenovnik</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+           <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ms-auto" style="display:flex; flex-direction:row;" id="social">
+          <li class="nav-item" style="margin-right: 5px; margin-left: 5px;">
+            <a class="nav-link" href="https://www.facebook.com/"target="_blank"><i class="fab fa-facebook-square fa-2x"></i></i></a>
+          </li>
+          <li class="nav-item" style="margin-right: 5px; margin-left: 5px;">
+            <a  class="nav-link" href="https://www.twitter.com/"target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+          </li>
+          <li class="nav-item" style="margin-right: 5px; margin-left: 5px;">
+            <a href="https://www.instagram.com/" target="_blank" class="nav-link" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          </li>
+          </li>
+         </ul>
+    </nav>
+
+
+<div style="margin-top: -88px;" id="pozadina">
+  <img class="img-fluid w-100" src="Slike/Pozadina_main.png" alt="bg">
+</div>
+ 
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Obaveštenje o poslatoj poruci!</h5>
+          </div>
+          <div class="modal-body">
+            Cenimo što ste odvojili vreme da nam pišete. <br> 
+            <p class="mb-0">  Vratite se na <a href="index.html" style="text-decoration: none;"> početnu stranu.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<div class="container mb-5" style="margin-block-start: -18%;" >
+    <form action="" method="POST" name="kontakt" id="kontakt">
+      <!--  -->
+    <h2 class="display-4 text-center text-light mt-3">Kontakt</h2>
+    <hr class="mb-4">
+    <div class="container w-50" style="background-color: black;  border-radius: 5px;;">
+
+  <div class="mb-3 pt-3">
+      <div class="alert alert-info fade show" role="alert">
+          <!-- Unesite svoje podatke! -->
+          Ne oklevajte da nas kontaktirate ukoliko imate bilo kakvu nedoumicu u vezi sa redovnim vežbanjem, pravilnom ishranom, ili našim kutkom. 
+        </div>
+      <div id="error_message"></div>
+
+      <input type="text" class="form-control" name="ime" id="ime" placeholder="Ime" >
+    </div>
+    <div class="mb-3">
+      <input type="text" class="form-control" name="prezime" id="prezime" placeholder="Prezime">
+    </div>
+  <div class="mb-3">
+      <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+    </div>
+    <div class="mb-3">
+      <textarea class="form-control" id="poruka" name="poruka" rows="5" placeholder="Vaša poruka"></textarea>
+    </div>
+    <button type="submit" id="btnInsert" >Pošalji</button>
+  </form>
+  </div>
+</div>
+
+
+<!-- Futer -->
+<footer class="page-footer font-small pt-4">
+  <div class="container-fluid text-center text-md-left">
+    <div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3"> 
+
+      <div class="col-md-6 mt-md-0 mt-3">
+        <h5 class="text-uppercase text-light text-center mb-0">Teretana Koloseum</h5>
+        <a href="index.html"><img src="Slike/logo_130.png"  class="img-fluid mx-auto d-block"></a>
+      </div>
+      <hr class="clearfix w-100 d-md-none pb-3 text-light">
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <h5 class="text-uppercase text-light">Mapa sajta</h5>
+        <ul class="list-unstyled">
+          <li>
+           <a href="index.html"><i class="fas fa-caret-right mr-2"></i>Početna</a>
+          </li>
+          <li>
+            <a href="o_nama.html"><i class="fas fa-caret-right mr-2"></i>O nama</a>
+          </li>
+          <li>
+            <a href="usluge.html"><i class="fas fa-caret-right mr-2"></i>Usluge</a>
+          </li>
+          <li>
+            <a href="cenovnik.html"><i class="fas fa-caret-right mr-2"></i>Cenovnik</a>
+          </li>
+          <li>
+            <a href="blog.html"><i class="fas fa-caret-right mr-2"></i>Blog</a>
+          </li>
+          <li>
+            <a href="FAQ.html"><i class="fas fa-caret-right mr-2"></i>FAQ</a>
+          </li>
+          <li>
+            <a href="Kontakt.html"><i class="fas fa-caret-right mr-2"></i>Kontakt</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-md-0 mb-3">
+        <h5 class="text-uppercase text-light">Koloseum</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p><i class="fas fa-search-location mr-2"></i>Vojvode Stepe 283, Beograd</p>
+          </li>
+          <li>
+            <p><i class="fas fa-envelope mr-2"></i>info@koloseum.com</p>
+          </li>
+          <li>
+            <p><i class="fas fa-phone-alt mr-2"></i>+381 11 2471 099</p>
+          </li>
+          <li>
+            <p><i class="far fa-clock mr-2"></i>00h-24h, Ponedeljak - Nedelja</p>
+          </li>
+          <ul class="list-inline">
+            <a href="https://www.facebook.com/" target="_blank"> <li class="list-inline-item"> <p style="cursor: pointer;"><i class="fab fa-facebook-square fa-2x"></i></p></li></a>
+            <a href="https://www.twitter.com/" target="_blank">  <li class="list-inline-item"> <p style="cursor: pointer;"><i class="fab fa-twitter fa-2x"></i></p></li></a>
+            <a href="https://www.instagram.com/" target="_blank"><li class="list-inline-item"> <p style="cursor: pointer;"><i class="fab fa-instagram fa-2x"></i></p></li></a>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copyright text-center pb-1 text-light">© 2022 VIŠER, Nemanja Branković, 
+    <a href="mailto:nemanjanrt7719@gs.viser.edu.rs">nemanjanrt7719@gs.viser.edu.rs</a>
+  </div>
+</footer>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+  
+    <script>
+      // Navigacija
+        $(window).scroll(function(){
+        $('nav').toggleClass('skrol',$(this).scrollTop() > 80);
+        });
+    </script>
+    <script src="css/Validacija.js"></script>
+
+  </body>
+</html>
